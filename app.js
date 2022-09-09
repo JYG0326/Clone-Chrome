@@ -1,10 +1,8 @@
-document.title = "Hello! JS!"
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-const title = document.querySelector(".hello h1");
-
-function handleTitleClick(){
-    title.style.color = "blue";
-    console.log("title was clicked");
+function onLoginBtnClick() {
+  console.log("hello", loginInput.value);
 }
 
-title.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginBtnClick);
