@@ -8,6 +8,7 @@ let toDos = [];
 function saveToDos(){
     localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
 }
+
 function deleteToDo(){
     const li = event.target.parentElement;
     li.remove();
