@@ -27,9 +27,38 @@ img{
     font-size: 75px;
     color: white;
 }
+
+#login-form{
+    padding: 25px;
+}
+
+#login-form > input:first-child{
+    width: 300px;
+    height: 45px;
+    background-color: whitesmoke;
+    border: 2.5px solid;
+    padding: 0px 0px 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+#login-form > input:last-child{
+    width: 100px;
+    height: 45px;
+    background: none;
+    border: 2.5px solid;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+#login-form > input:last-child:hover{
+    background-color: white;
+}
+
 #greeting{
     font-size: 100px;
     color: white;
+    padding-bottom: 25px;
 }
 
 #todo-form > input{
@@ -40,7 +69,12 @@ img{
     border: 0px;
     border-bottom: 2.5px solid;
     font-size: 30px;
+    font-weight: bold;
     color: white;
+}
+
+#todo-form > input:focus{
+    outline: none;
 }
 
 #todo-form > input::placeholder{
